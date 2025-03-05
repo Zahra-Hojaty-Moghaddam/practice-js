@@ -80,6 +80,7 @@ const obg = {
 }
 const keys = Object.keys(obg);
 console.log(keys);
+console.log(typeof keys)
 
 const values = Object.values(obg);
 console.log(values); 
