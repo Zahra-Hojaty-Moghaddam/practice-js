@@ -8,7 +8,7 @@
 //  output : 
 //    a:    array5 = [ 1, 2, 'red', 3, 4, 'orange', 5, 6, 'pink', 7, 8, 'blue']
 //    b:    numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-   
+//    c:    colors = ['red', 'orange', 'pink']
 
 //  Qestion2:)
 //  input:
