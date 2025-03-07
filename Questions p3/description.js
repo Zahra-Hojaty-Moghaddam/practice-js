@@ -15,7 +15,8 @@
 // console.log(Boolean(c));
 
 // console.log(Boolean(NaN));
-// var d = 'flower'/ 5 ;
+// var d = 'flower' / 'flower' ;
+// console.log(d)
 // console.log(Boolean(d));
 
 
@@ -102,10 +103,12 @@
 
 // //  Question 2: What is the final value of x?
 // let x = 10;
-// x = x++ * 2 + --x;
+// y = x++ * 2 + --x;
 // console.log(x);
-// // x++ returns 10, but after execution, x becomes 11.
-// // --x decrements x to 10.
-// // Calculation: 10 * 2 + 10 = 30.
+// console.log(y);
+
+// x++ returns 10, but after execution, x becomes 11.
+// --x decrements x to 10.
+// Calculation: 10 * 2 + 10 = 30.
 
 

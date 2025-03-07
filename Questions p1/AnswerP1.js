@@ -20,6 +20,9 @@ const array4 = [ 7, 8, 'blue'];
 const array5 = array1.concat(array2,array3,array4);
 console.log(array5);
 
+const Array5 = [...array1,...array2,...array3,...array4];
+console.log(Array5);
+
 //  b:
 const numbers = [];
 numbers.push(array1.shift(),array1.shift());
@@ -27,7 +30,7 @@ numbers.push(array2.shift(),array2.shift());
 numbers.push(array3.shift(),array3.shift());
 numbers.push(array4.shift(),array4.shift());
 console.log(numbers);
-
+console.log(array1)
 //  c:
 var colors = [];
 colors.push(array1.pop());
@@ -45,8 +48,8 @@ console.log(colors);
 
 var fruits = ['apple' , 111 , 222 , 333 , 'orange' , 'grapes' , 'watermelon'];
 fruits.splice(1,4,'the numbers is deleted');
+// delete fruits[0];
 console.log(fruits);
-
 
 
 //  Qestion3:)
@@ -58,6 +61,7 @@ console.log(fruits);
 const sentence = "That cat is very cute and smart. ";
 const text = sentence.slice(12, 21); // text.substring(12, 21)
 console.log(text);
+// console.log(sentence);
 
 
 
@@ -65,7 +69,7 @@ console.log(text);
 //  Qestion4:)
 //  input:
 //  We have an object wizard with the following structure:
-//        firstName: "Harry", lastName: "potter", schoolName: "Hogwarts"
+//        {firstName: "Harry", lastName: "potter", schoolName: "Hogwarts"}
 //  Convert the product wizard into a pretty JSON string (with indentation) using JSON.stringify().
 //  Use an indentation of 4 spaces(or tab) to make the JSON more readable.
 //  output:

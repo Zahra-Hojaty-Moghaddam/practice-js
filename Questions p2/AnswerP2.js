@@ -31,7 +31,7 @@ console.log('smallest : '+ smallest);
 let str = "JavaScript";
 let reversedStr = "";
 
-for (let i = str.length - 1; i >= 0; i--) {
+for (let i = str.length - 1 ; i >= 0; i--) {
     reversedStr += str[i];
 }
 console.log(reversedStr);
@@ -41,7 +41,7 @@ console.log(reversedStr);
 //Question 3 :)
 //  Write a program that takes an array of strings and filters out only the words that have an even number of characters. Store these words in a new array and display the result.
 //  input:
-//      words = ["apple", "banana", "car", "hello", "world", "javascript"]
+//      words = ["apple", "banana", "cherry", "hello", "world", "javascript"]
 //  output:
 //      ["banana", "hello", "world"]
 
@@ -70,15 +70,19 @@ console.log(evenLengthWords);
 //  output:
 //      { name: "ALI", city: "TEHRAN", country: "IRAN" }
 
-let obj = { name: "ali", city: "tehran", country: "iran" };
+let obj = { name: "ali", city: "tehran", country: "iran" , age: 23 };
 let uppercaseObj = {};
 
 for (let key in obj) {
-    uppercaseObj[key] = obj[key].toUpperCase();
+    uppercaseObj[key] = typeof obj[key] === "string" ? obj[key].toUpperCase() : obj[key];
 }
 console.log(uppercaseObj);
 
-
+// if (typeof obj[key] === "string") { // بررسی می‌کنیم که مقدار، رشته باشد
+//     uppercaseObj[key] = obj[key].toUpperCase();
+// } else {
+//     uppercaseObj[key] = obj[key]; // اگر رشته نبود، مقدار را بدون تغییر ذخیره می‌کنیم
+// }
 
 //Question 5 :) 
 
@@ -95,8 +99,9 @@ console.log(uppercaseObj);
 //  ***
 //   **
 //    *
+
 let starA = '' ;
-for( let i = 1 ; i<=5 ; i++){
+for( let i = 1 ; i<= 5 ; i++){
     for( let j = 5 ; j > i ; j-- ){
         starA += ' ';
     }
@@ -108,7 +113,7 @@ for( let i = 1 ; i<=5 ; i++){
 console.log(starA);
 
 let starB = '';
-for( let i = 1 ; i <=5 ; i++){
+for( let i = 1 ; i <= 5 ; i++){
     for( let j = 1 ; j < i ; j++){
         starB += ' ';
     }
