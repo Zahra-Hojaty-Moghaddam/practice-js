@@ -25,7 +25,6 @@ console.log(student)
 //    - Add a new property `email` to the `student` object  
 //    - Change the `city` value in `address`  
 
-
 student.email = "mohsen.sarvari@ut.ac.ir"
 console.log(student)
 student.address.city = "Mashhad"
@@ -117,8 +116,9 @@ for(let key in numbers2){
     console.log(Array.isArray(numbers2[key]));
 }
 
-const str = "mohsen nan  mohsen wedaj  efoijseo  654161  mohsen."
 
+
+const str = "mohsen nan  mohsen wedaj  efoijseo  654161  mohsen."
 // output : mohsen repeated : 3
 
 // const indexWord = str.indexOf("mohsen");

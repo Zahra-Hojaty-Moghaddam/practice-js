@@ -114,7 +114,7 @@ console.log("============")
 let sum = 0 ;
 let namBer = [ 4, 2, 6, 8, 2, 1, 7, 6, 3, 9];
 for( let i = 0 ; i < namBer.length ; i++){
-    for( let j = 1 ; j < namBer.length ; j++){
+    for( let j = i + 1 ; j < namBer.length ; j++){
         sum = namBer[i] + namBer[j];
         if( sum == 10 ){
             console.log( '( ' + namBer[i] + ' , ' + namBer[j] + ' )')

@@ -20,17 +20,33 @@ const array4 = [ 7, 8, 'blue'];
 const array5 = array1.concat(array2,array3,array4);
 console.log(array5);
 
+// Another solution :
 const Array5 = [...array1,...array2,...array3,...array4];
 console.log(Array5);
 
+
 //  b:
-const numbers = [];
-numbers.push(array1.shift(),array1.shift());
-numbers.push(array2.shift(),array2.shift());
-numbers.push(array3.shift(),array3.shift());
-numbers.push(array4.shift(),array4.shift());
-console.log(numbers);
-console.log(array1)
+const numbrs = [];
+numbrs.push(array1.shift(),array1.shift());
+numbrs.push(array2.shift(),array2.shift());
+numbrs.push(array3.shift(),array3.shift());
+numbrs.push(array4.shift(),array4.shift());
+console.log(numbrs);
+console.log(array1);
+
+// Another solution :
+const numbers = array5.filter(item => typeof item === 'number');
+console.log("numbers:", numbers);
+
+// Another solution :
+let numberst = []
+for(let i of array5){
+    if(typeof i === "number"){
+        numberst.push(i);
+    }
+}
+console.log(numberst);
+
 //  c:
 var colors = [];
 colors.push(array1.pop());
@@ -51,6 +67,14 @@ fruits.splice(1,4,'the numbers is deleted');
 // delete fruits[0];
 console.log(fruits);
 
+var fruts = ['apple' , 111 , 222 , 333 , 'orange' , 'grapes' , 'watermelon'];
+for (let i = 0; i < fruts.length; i++) {
+  if (typeof fruts[i] === 'number') {
+    fruts.splice(i, 1, 'the numbers is deleted');
+    i--;// چون متد اسپیلایس مقدار جدیدی در همان جایگاه قرار میدهد، اما مقدار بعدی به همان ایندکس منتقل می شود . پس اگر شمارنده را یک واحد کم نکنیم یک مقدار از دست میرود
+  }
+}
+console.log(fruts);
 
 //  Qestion3:)
 //  input:

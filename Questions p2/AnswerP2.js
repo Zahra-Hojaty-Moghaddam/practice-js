@@ -56,7 +56,7 @@ for (let i = 0; i < words.length; i++) {
 console.log(evenLengthWords); 
 
 // Another solution:
-// let words = ["apple", "banana", "car", "hello", "world", "javascript"];
+// let words = ["apple", "banana", "cherry", "hello", "world", "javascript"];
 
 // let evenLengthWords = words.filter(word => word.length % 2 === 0);
 
