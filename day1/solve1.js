@@ -70,24 +70,133 @@ console.log(`${start}...${end}`)
 
 
  
+
+// console.log(Object.keys(obj1))
+// console.log(Object.values(obj1))
+// const keys = Object.keys(obj1);
+// const values = Object.values(obj1);
+// console.log(Object.entries(obj1))
+// newObjs.name = "ali"
+
 const obj1 = {
     name : "mohsen",
-    lname : "sarvari",
+    'lname-1' : "sarvari",
     age : 20
+    
 }
+console.log(obj1['lname-1'])
+obj1.email ='sdfghj@dfg'
+obj1['book']='fdd'
+console.log(obj1)
+// obj1.name = 'faeze'
+// obj1['name'] ='faeze'
 
-console.log(Object.keys(obj1))
-console.log(Object.values(obj1))
-const keys = Object.keys(obj1);
-const values = Object.values(obj1);
-console.log(Object.entries(obj1))
+console.log(obj1.name)
+console.log(obj1["name"])
+
 const newObjs = {}
-newObjs.name = "ali"
-
-for (let key in obj1){
-    newObjs[obj1[key]] = key;
+for (let i in obj1){
+    newObjs[obj1[i]] = i;
 }
 console.log(newObjs)
+
+
+const students = {
+    student1: "Ali",
+    student2: "Reza",
+    student3: "Sara"
+};
+// students['student3']
+let newStudents = {};
+for(let j in students){
+    newStudents[students[j]] = j;
+}
+console.log(newStudents)
+
+
+
+
+
+
+const ob = {
+    book_1 : 'a',
+    book2 : 'b',
+    book3 : 'c',
+    book4 : 'd'
+}
+let obNew = {};
+for(let key in ob){
+    obNew[ob[key]] = key;
+}
+console.log(obNew);
+
+
+
+
+
+
+
+
+
+console.log(ob.book_1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const newObgect = {};
+// for(let key in students){
+//     newObgect[students[key]]= key ;
+// }
+// console.log(newObgect)
+
+
+// const students = [
+//     { name: "Ali", score: 75 },
+//     { name: "Reza", score: 80 },
+//     { name: "Sara", score: 75 },
+//     { name: "Mona", score: 90 },
+//     { name: "John", score: 80 }
+// ];
+
+// function createScoreObject(students) {
+//     const scoreObj = {}; // آبجکت جدید برای ذخیره نمرات و نام‌ها
+
+//     // استفاده از for-of برای پیمایش آرایه
+//     for (let student of students) {
+//         scoreObj[student[score]] = student[score]; // آخرین نام با نمره مشابه در آرایه قرار می‌گیرد
+//     }
+
+//     return scoreObj;
+// }
+
+// const result = createScoreObject(students);
+// console.log(result);
+
 
 delete obj1.age;
  

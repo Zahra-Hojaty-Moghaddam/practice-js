@@ -392,6 +392,7 @@ let person = {
 }
 printPersonDetails();
 
+//----------------
 
 function printAnimal(animals){
     for( let animal of animals ){

@@ -35,13 +35,13 @@ console.log(numbrs);
 console.log(array1);
 
 // Another solution :
-const numbers = array5.filter(item => typeof item === 'number');
+const numbers = array5.filter(item => typeof item === 'string');
 console.log("numbers:", numbers);
 
 // Another solution :
 let numberst = []
 for(let i of array5){
-    if(typeof i === "number"){
+    if(typeof i === 'number'){
         numberst.push(i);
     }
 }

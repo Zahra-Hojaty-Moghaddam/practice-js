@@ -65,11 +65,14 @@ console.log(email1.slice(0,3) + '...' + '@gmail.com')
 // practice 6 with AI :
 let email = "example@example.com";
 let parts = email.split("@");
-let firstPart = parts[0].slice(0, 3);
-let domainPart = parts[1];
-let formattedEmail = firstPart + "..." + domainPart;
-console.log(formattedEmail); 
-
+console.log(parts)
+// let firstPart = parts[0].slice(0, 3);
+// let domainPart = parts[1];
+// let formattedEmail = firstPart + "..." + domainPart;
+// console.log(formattedEmail); 
+// console.log(parts);
+// console.log(parts[0].slice(0,3) + "...@" + parts[1])
+console.log(parts.join(' '));
 //****************************************************** */
 
 // practice 7 :
@@ -90,6 +93,12 @@ for( let i = 0 ; i < keys.length ; i++){
     newObg[values[i]] = keys[i];
 }
 console.log(newObg);
+
+const newObg3 = {};
+keys.forEach((key,index)=>{
+    newObg3[key] = values[index]
+});
+console.log(newObg3);
 
 // AI:
 // const newObg2 = keys.reduce((acc, key, index) => {

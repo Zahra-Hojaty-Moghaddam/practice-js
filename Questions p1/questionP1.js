@@ -12,9 +12,9 @@
 
 //  Qestion2:)
 //  input:
-//        fruits = ['apple' , 111 , 222 , 333 , 'orange' , 'grapes' , 'watermelon']
+//        fruits = ['apple' , 111 , 222 , 333 , 'orange' , 'grapes' ,33,44, 'watermelon']
 //  output:
-//        fruits = ['apple' , 'the numbers is deleted' , 'orange' , 'grapes' , 'watermelon']
+//        fruits = ['apple' , 'the numbers is deleted' , 'orange' , 'grapes', 'the numbers is deleted' , 'watermelon']
 
 
 //  Qestion3:)
