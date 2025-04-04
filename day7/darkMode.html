@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button {
+            padding: 20px;
+            background-color: lightgray;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: aliceblue;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-mode">Dark Mode</button>
+
+    <script>
+        let btnMode = document.getElementById('btn-mode');
+        let body = document.body; 
+
+        btnMode.addEventListener('click', () => {
+            body.classList.toggle('dark');  
+
+            if (body.classList.contains('dark')) {
+                btnMode.textContent = 'Light Mode';
+            } else {
+                btnMode.textContent = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
